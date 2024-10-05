@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formularios</title>
+    <!-- Enlazamos el archivo CSS para darle estilo a la página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal del formulario -->
+    <div class="contenedor">
+        <h1>Registro</h1>
+        <!-- Formulario de registro -->
+        <form id="registroForm" onsubmit="return validarFormulario()">
+            <!-- Campo para el nombre -->
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            
+            <!-- Campo para el correo electrónico -->
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            
+            <!-- Campo para la contraseña -->
+            <input type="password" id="password" placeholder="Contraseña" required>
+            
+            <!-- Campo para confirmar la contraseña -->
+            <input type="password" id="confirmarPassword" placeholder="Confirmar Contraseña" required>
+            
+            <!-- Mensaje para mostrar errores o éxitos -->
+            <div id="mensaje"></div>
+            
+            <!-- Botón de registro -->
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <!-- Enlazamos el archivo JavaScript que contiene la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>
+
